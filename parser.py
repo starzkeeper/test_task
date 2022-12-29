@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('parser.sqlite')
 cur = conn.cursor()
 
-df = pd.read_excel('Задание бек.xlsx')
+df = pd.read_excel('test_task.xlsx')
 
 df = df.drop(labels=[0, 1])
 df = df.rename(columns={
